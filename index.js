@@ -12,8 +12,8 @@ app.get('/dogs',(req,res)=>{
 app.get('/dogs/:id',(req,res)=>{
     res.json(dogs[parseInt(req.params.id)-1])
 })
-app.get('/umesh',(req,res)=>{
-    res.send("Umesh............gyfvkhkuy......")
+app.get('/',(req,res)=>{
+    res.send("Umesh...........Here.")
 })
 app.listen(port,()=>{
 })
