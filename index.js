@@ -8,6 +8,8 @@ let dogs=[
     {"name":"brudo", "Breed":"japan"}
 ]
 
+
+
 const connection = mysql.createConnection({
     host:"localhost",
     user:'root',
@@ -40,7 +42,7 @@ connection.connect((err)=>{
 //     console.log(result);
 // })
 
-var q="SELECT * FROM dev_team ;"
+var q="SELECT * FROM movies ;"
 connection.query(q, function(err,result){
     if(err) throw err;
     console.log(result);
